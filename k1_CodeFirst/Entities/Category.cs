@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace k1_CodeFirst.Entities
 {
-    class Category
+   public class Category
     {
         public int CategoryID { get; set; }
         //[MaxLength(15, ErrorMessage = "Bu alana en fazla 15 karakter girilebilir")] bu maximum kaç değer girilebilir mesajı. 
@@ -17,6 +17,7 @@ namespace k1_CodeFirst.Entities
 
         public string Description { get; set; }
         // SQL PICTURE >> C # byte[]
+        public List<Product> Products { get; set; }
         
     }
 }

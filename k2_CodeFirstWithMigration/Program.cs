@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace k1_CodeFirst
+namespace k2_CodeFirstWithMigration
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace k1_CodeFirst
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form3());
+            Application.Run(new Form1());
         }
     }
 }

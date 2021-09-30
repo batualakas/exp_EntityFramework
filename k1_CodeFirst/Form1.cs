@@ -112,8 +112,8 @@ namespace k1_CodeFirst
         private void btnKategoriSil_Click(object sender, EventArgs e)
         {
             // 16 id'li yeri sil.
-
-            var silinecekKategori = db.Categories.FirstOrDefault(x => x.CategoryID == 16);
+            var id = Convert.ToInt32(txtSilinecekId.Text);
+            var silinecekKategori = db.Categories.FirstOrDefault(x => x.CategoryID == id);
             if (silinecekKategori!=null)
             {
                 db.Categories.Remove(silinecekKategori);

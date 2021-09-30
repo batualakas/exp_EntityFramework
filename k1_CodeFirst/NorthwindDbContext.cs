@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace k1_CodeFirst
 {
-    class NorthwindDbContext : DbContext
+    public class NorthwindDbContext : DbContext
     {
         public NorthwindDbContext()
         {
@@ -17,6 +17,10 @@ namespace k1_CodeFirst
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Order_Detail> Order_Details { get; set; }
     }
+
+
 }
