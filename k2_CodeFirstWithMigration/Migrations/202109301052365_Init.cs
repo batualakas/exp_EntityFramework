@@ -50,7 +50,7 @@
                     })
                 .PrimaryKey(t => t.StudentID)
                 .ForeignKey("dbo.Departments", t => t.DepartmentID, cascadeDelete: true)
-                .ForeignKey("dbo.Teachers", t => t.TeacherID, cascadeDelete: true)
+                .ForeignKey("dbo.Teachers", t => t.TeacherID, cascadeDelete: false)
                 .Index(t => t.TeacherID)
                 .Index(t => t.DepartmentID);
             

@@ -21,11 +21,9 @@ namespace k2_CodeFirstWithMigration.Entities
         public int TeacherID { get; set; }
         public  Teacher Teacher { get; set; }
 
-        public List<Student> Students { get; set; }
-
         public List<StudentCourse> StudentCourses { get; set; }
 
-        public List<Course> DepartmenCourses { get; set; }
+        public List<DepartmenCourse> DepartmenCourses { get; set; }
         
 
 

@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BolumEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolumEkle.Designer.cs">
+      <DependentUpon>BolumEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Egitmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Egitmen.Designer.cs">
+      <DependentUpon>Egitmen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entitiess\Lesson.cs" />
     <Compile Include="Entitiess\DepartmenCourse.cs" />
     <Compile Include="Entitiess\Department.cs" />
@@ -63,6 +75,12 @@
     <Compile Include="Entitiess\Student.cs" />
     <Compile Include="Entitiess\StudentCourse.cs" />
     <Compile Include="Entitiess\Teacher.cs" />
+    <Compile Include="FakulteEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakulteEkleme.Designer.cs">
+      <DependentUpon>FakulteEkleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,15 +91,47 @@
     <Compile Include="Migrations\202109301052365_Init.designer.cs">
       <DependentUpon>202109301052365_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110040742027_TCPropAddedToStudent.cs" />
+    <Compile Include="Migrations\202110040742027_TCPropAddedToStudent.designer.cs">
+      <DependentUpon>202110040742027_TCPropAddedToStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110040821241_FacultyUpdate.cs" />
+    <Compile Include="Migrations\202110040821241_FacultyUpdate.designer.cs">
+      <DependentUpon>202110040821241_FacultyUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OBSDbContext.cs" />
+    <Compile Include="OgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkle.Designer.cs">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BolumEkle.resx">
+      <DependentUpon>BolumEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Egitmen.resx">
+      <DependentUpon>Egitmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FakulteEkleme.resx">
+      <DependentUpon>FakulteEkleme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109301052365_Init.resx">
       <DependentUpon>202109301052365_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110040742027_TCPropAddedToStudent.resx">
+      <DependentUpon>202110040742027_TCPropAddedToStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110040821241_FacultyUpdate.resx">
+      <DependentUpon>202110040821241_FacultyUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEkle.resx">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

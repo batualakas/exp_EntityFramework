@@ -19,5 +19,11 @@ namespace k2_CodeFirstWithMigration.Entities
         public List<Student> Students { get; set; }
         public List<Course> Courses { get; set; }
         #endregion
+        #region Methods
+        public override string ToString()
+        {
+            return $"{this.Name} {this.Surname}";
+        }
+        #endregion
     }
 }
